@@ -1,4 +1,4 @@
-module github.com/GuilhermeFirmiano/socket-io-teste
+module github.com/GuilhermeFirmiano/socket-io
 
 go 1.14
 
