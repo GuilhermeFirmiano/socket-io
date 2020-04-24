@@ -16,6 +16,9 @@ type Socket interface {
 	// Rooms returns the rooms name joined now.
 	Rooms() []string
 
+	// AllRooms returns the rooms.
+	AllRooms() []string
+
 	// Request returns the first http request when established connection.
 	Request() *http.Request
 
