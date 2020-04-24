@@ -98,6 +98,10 @@ func (h *socketHandler) Rooms() []string {
 	return ret
 }
 
+func (h *socketHandler) AllRooms() []string {
+	return h.baseHandler.broadcast.Rooms(nil)
+}
+
 func (h *socketHandler) Join(room string) error {
 	if err := h.baseHandler.broadcast.Join(h.broadcastName(room), h.socket); err != nil {
 		return err
